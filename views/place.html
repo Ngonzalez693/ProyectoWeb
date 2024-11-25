@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lugares - Health Manager</title>
+  <link rel="shortcut icon" href="../src/Icono.png" />
+  <link rel="stylesheet" href="../css/stylesPlaces.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Jomhuria&family=Kaisei+Opti&display=swap" rel="stylesheet">
+  
+    <!-- Leaflet.js CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <h1>Health Manager</h1>
+    </div>
+    <nav>
+      <a href="../views/exercise.html">Ejercicios</a>
+      <a href="../views/food.html">Alimentación</a>
+      <div class="account-menu">
+        <button id="account-btn">Cuenta</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="places">
+      <h2>Lugares</h2>
+      <p>¡Busca los gimnasios, parques, rutas y sitios de deporte más cercanos a ti!</p>
+
+      <div id="map" style="height: 400px; width: 100%;"></div>
+
+      <a href="../views/logged.html" class="back-button"><strong>Volver</strong></a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2024 Health Manager. Todos los derechos reservados.</p>
+      <ul class="social-links">
+        <li><a href="https://github.com/Ngonzalez693"><img src="../src/Github.png" alt="Github"></a></li>
+        <li><a href="https://linkedin.com/in/nicolás-gonzález-toro-24143630b"><img src="../src/linkedin.png"
+              alt="LinkedIn"></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <div id="account-dropdown" class="account-dropdown hidden">
+    <div class="profile-picture"></div>
+    <p>Nombre</p>
+    <ul>
+      <li><a href="#config">Configuración</a></li>
+      <li><a href="#edit">Editar perfil</a></li>
+      <li><a href="../index.html">Cerrar Sesión</a></li>
+    </ul>
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="../js/places.js"></script>
+
+</body>
+</html>

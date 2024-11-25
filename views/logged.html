@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main - Health Manager</title>
+  <link rel="shortcut icon" href="../src/Icono.png" />
+  <link rel="stylesheet" href="../css/stylesLogged.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Jomhuria&family=Kaisei+Opti&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <h1>Health Manager</h1>
+    </div>
+    <nav>
+      <a href="exercise.html">Ejercicios</a>
+      <a href="food.html">Alimentación</a>
+      <a href="place.html">Lugares</a>
+      <div class="account-menu">
+        <button id="account-btn">Cuenta</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="welcome">
+      <h2>¿Qué Quieres Hacer Hoy?</h2>
+      <p>¡Recuerda siempre dar lo mejor de ti!</p>
+      <div class="features">
+        <div class="feature">
+          <img src="../src/Ejercicios.jpg" alt="Ejercicios">
+          <h3>Ejercicios</h3>
+          <p>Registra ejercicios, duración y horas de sueño.</p>
+        </div>
+        <div class="feature">
+          <img src="../src/alimentos.jpg" alt="Alimentación">
+          <h3>Alimentación</h3>
+          <p>Busca dietas, registra tus tiempos y tipos de comidas.</p>
+        </div>
+        <div class="feature">
+          <img src="../src/Mapa.jpg" alt="Lugares">
+          <h3>Lugares</h3>
+          <p>Revisa los gimnasios, parques y rutas cercanos.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <br>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2024 Health Manager. Todos los derechos reservados.</p>
+      <ul class="social-links">
+        <li><a href="https://github.com/Ngonzalez693"><img src="../src/Github.png" alt="Github"></a></li>
+        <li><a href="https://linkedin.com/in/nicolás-gonzález-toro-24143630b"><img src="../src/linkedin.png"
+              alt="LinkedIn"></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Slider -->
+  <div id="account-dropdown" class="account-dropdown hidden">
+    <div class="profile-picture"></div>
+    <p>Nombre</p>
+    <ul>
+      <li><a href="#config">Configuración</a></li>
+      <li><a href="#edit">Editar perfil</a></li>
+      <li><a href="../index.html">Cerrar Sesión</a></li>
+    </ul>
+  </div>
+
+  <script src="../js/logged.js"></script>
+
+</body>
+</html>

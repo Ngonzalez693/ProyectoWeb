@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicios - Health Manager</title>
+  <link rel="shortcut icon" href="../src/Icono.png" />
+  <link rel="stylesheet" href="../css/stylesExercises.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Jomhuria&family=Kaisei+Opti&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <h1>Health Manager</h1>
+    </div>
+    <nav>
+      <a href="../views/food.html">Alimentación</a>
+      <a href="../views/place.html">Lugares</a>
+      <div class="account-menu">
+        <button id="account-btn">Cuenta</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="exercises">
+      <h2>Registro de Actividades</h2>
+      <p>Registra tus ejercicios y horas de sueño para llevar un control adecuado de tu bienestar.</p>
+
+      <!-- Formulario de Registro de Actividades -->
+      <form id="activity-form">
+        <label for="exercise-type">Tipo de ejercicio:</label>
+        <select id="exercise-type">
+          <option value="">Selecciona</option>
+          <option value="Cardio">Cardio</option>
+          <option value="Fuerza">Fuerza</option>
+          <option value="Resistencia">Resistencia</option>
+        </select>
+      
+        <label for="duration">Duración (min):</label>
+        <input type="number" id="duration" placeholder="Duración en minutos">
+      
+        <label for="sleep-hours">Horas de sueño:</label>
+        <input type="number" id="sleep-hours" placeholder="Horas dormidas">
+      
+        <label for="day-of-week">Día de la semana:</label>
+        <select id="day-of-week">
+          <option value="Lunes">Lunes</option>
+          <option value="Martes">Martes</option>
+          <option value="Miércoles">Miércoles</option>
+          <option value="Jueves">Jueves</option>
+          <option value="Viernes">Viernes</option>
+          <option value="Sábado">Sábado</option>
+          <option value="Domingo">Domingo</option>
+        </select>
+      
+        <button type="submit">Registrar</button>
+      </form>
+
+      <!-- Resumen de Actividades Registradas -->
+      <section class="summary">
+        <h3>Resumen de Actividades Registradas</h3>
+        <div id="summary-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Tipo de Ejercicio</th>
+                <th>Duración (minutos)</th>
+                <th>Horas de Sueño</th>
+              </tr>
+            </thead>
+            <tbody id="activities-list">
+              <!-- Aquí se agregan las actividades registradas -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Gráfico de horas de sueño -->
+        <div class="sleep-graph">
+          <h3>Horas de Sueño</h3>
+          <div id="sleep-graph" style="display: flex; justify-content: center; align-items: flex-end; height: 200px; margin-top: 20px;">
+            <!-- Las barras del gráfico se generarán aquí dinámicamente -->
+          </div>          
+        </div>
+      </section>
+    </section>
+
+    <a href="../views/logged.html" class="back-button">Volver</a>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2024 Health Manager. Todos los derechos reservados.</p>
+      <ul class="social-links">
+        <li><a href="https://github.com/Ngonzalez693"><img src="../src/Github.png" alt="Github"></a></li>
+        <li><a href="https://linkedin.com/in/nicolás-gonzález-toro-24143630b"><img src="../src/linkedin.png" alt="LinkedIn"></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <div id="account-dropdown" class="account-dropdown hidden">
+    <div class="profile-picture"></div>
+    <p>Nombre</p>
+    <ul>
+      <li><a href="#config">Configuración</a></li>
+      <li><a href="#edit">Editar perfil</a></li>
+      <li><a href="../index.html">Cerrar Sesión</a></li>
+    </ul>
+  </div>
+
+  <script src="../js/exercises.js"></script>
+
+</body>
+</html>
